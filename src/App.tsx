@@ -50,7 +50,7 @@ function App() {
             </p>
             <div className="flex flex-col sm:flex-row w-full gap-3 sm:justify-center mt-2">
               <a 
-                href="https://github.com" 
+                href="https://github.com/tuthan" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold py-4 sm:px-8 rounded-xl transition-all flex items-center justify-center"
@@ -98,7 +98,7 @@ function App() {
                   Leading DevOps migration projects and pioneering research in Agentic AI and Agentic Development.
                 </p>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/tuthan" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block w-full text-center py-2 bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold rounded-lg text-sm transition-transform active:scale-95"
