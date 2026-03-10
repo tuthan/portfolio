@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 import TerminalAbout from './TerminalAbout'
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             <img 
               className="w-full h-full object-cover" 
               alt="Hung Vo" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZA0x2Yv_TQACws65s5kFdqHOkoXdKXJZrozTtLbJYxpaQmlP_wcwC4iq3FAwsOFcyUzcUSbPhmDHOOg40YUsPOuG-Z9lKwpLwllPH4s6rPjScr5leNWgk0X-Wcu5gg3ApAw7PLMNfQ09Lq-i1S4xqwhB3sYqOeWrxeTdEjdToN5g3GrErhzAldEStIU0ds4mDfnyKKhD6VE-217KiVR9_-eOryOi4x7MP0hc_f3Vphq1vOephhPp6TGoLsJBnnOisM1AUVgpkZZQ"
+              src="https://hire-me.atas.tech/hungvo-picture.0d7588fb81aae1db.jpg"
             />
           </div>
           <span className="font-bold text-lg tracking-tight">Hung Vo</span>
@@ -55,6 +56,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold py-4 sm:px-8 rounded-xl transition-all flex items-center justify-center gap-2"
               >
+                <Github size={20} />
                 GitHub Profile
               </a>
               <a 
@@ -63,12 +65,14 @@ function App() {
                 rel="noopener noreferrer"
                 className="glass text-slate-900 dark:text-slate-100 font-bold py-4 sm:px-8 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2"
               >
+                <Linkedin size={20} />
                 LinkedIn
               </a>
               <a 
                 href="mailto:hung@atas.tech" 
                 className="glass text-slate-900 dark:text-slate-100 font-bold py-4 sm:px-8 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2"
               >
+                <Mail size={20} />
                 Email Me
               </a>
             </div>
