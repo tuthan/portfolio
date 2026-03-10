@@ -24,7 +24,7 @@ function App() {
             <img 
               className="w-full h-full object-cover" 
               alt="Hung Vo" 
-              src="https://hire-me.atas.tech/hungvo-picture.0d7588fb81aae1db.jpg"
+              src="/profile.jpg"
             />
           </div>
           <span className="font-bold text-lg tracking-tight">Hung Vo</span>

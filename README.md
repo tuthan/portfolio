@@ -3,7 +3,7 @@
 A premium, interactive, and high-fidelity portfolio website built to showcase expertise in Cloud Security, Automation, and Agentic AI.
 
 ## 🚀 Live Demo
-[https://tuthan.github.io/portfolio/](https://tuthan.github.io/portfolio/)
+[https://portfolio.atas.tech/](https://portfolio.atas.tech/)
 
 ## ✨ Key Features
 - **Interactive Terminal:** An embedded React terminal component for a unique, developer-centric "About Me" experience.
