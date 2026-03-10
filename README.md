@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# Hung Vo | DevSecOps & AI Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, interactive, and high-fidelity portfolio website built to showcase expertise in Cloud Security, Automation, and Agentic AI.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[https://tuthan.github.io/portfolio/](https://tuthan.github.io/portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
+- **Interactive Terminal:** An embedded React terminal component for a unique, developer-centric "About Me" experience.
+- **Agentic AI & DevOps Focus:** Dedicated architecture highlights for **Agent-Kryptos**, Multi-Region CI/CD, and Zero-Trust SIEM.
+- **Premium Design:** Glassmorphism aesthetic with high-fidelity components prototyped using **Stitch MCP**.
+- **Dark/Light Mode:** Seamless theme toggling with custom CSS variables and Tailwind CSS.
+- **Fully Responsive:** Optimized for desktop and mobile devices.
+- **SEO Optimized:** Meta tags for search engines and high-impact social sharing (Open Graph/Twitter Cards).
+- **Verified Commits:** All contributions are cryptographically signed using SSH keys.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Framework:** [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/) & Material Symbols
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Deployment:** [GitHub Pages](https://pages.github.com/) via GitHub Actions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📥 Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v18+)
+- npm
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tuthan/portfolio.git
+   cd portfolio
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. Start development server:
+   ```bash
+   npm run dev
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏗️ Deployment
+This project uses GitHub Actions for automated deployment. Pushing to the `main` branch triggers a build (`npm run build`) and deploys the `dist` folder to the `gh-pages` branch.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔒 Security & Verification
+All commits in this repository are signed using the `agent_kryptos_ed25519` SSH key.
+To verify signatures locally:
+1. Import the public key into your `allowed_signers` file.
+2. Run `git log --show-signature`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Made with ❤️ by [Hung Vo](https://github.com/tuthan)
