@@ -61,7 +61,12 @@ export default function TerminalAbout() {
         )
         break
       case 'contact':
-        output = <div className="text-slate-300">Email: <a href="mailto:hung@atas.tech" className="text-primary hover:underline">hung@atas.tech</a></div>
+        output = (
+          <div className="text-slate-300 space-y-1">
+            <div>Email: <a href="mailto:hung@atas.tech" className="text-primary hover:underline">hung@atas.tech</a></div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/hungvotrung/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">/in/hungvotrung</a></div>
+          </div>
+        )
         break
       case 'clear':
         setHistory([])

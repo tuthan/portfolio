@@ -53,15 +53,23 @@ function App() {
                 href="https://github.com/tuthan" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold py-4 sm:px-8 rounded-xl transition-all flex items-center justify-center"
+                className="bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold py-4 sm:px-8 rounded-xl transition-all flex items-center justify-center gap-2"
               >
-                View Projects
+                GitHub Profile
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/hungvotrung/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="glass text-slate-900 dark:text-slate-100 font-bold py-4 sm:px-8 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2"
+              >
+                LinkedIn
               </a>
               <a 
                 href="mailto:hung@atas.tech" 
-                className="glass text-slate-900 dark:text-slate-100 font-bold py-4 sm:px-8 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center justify-center"
+                className="glass text-slate-900 dark:text-slate-100 font-bold py-4 sm:px-8 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center justify-center gap-2"
               >
-                Get In Touch
+                Email Me
               </a>
             </div>
           </div>
