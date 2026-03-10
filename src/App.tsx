@@ -109,12 +109,12 @@ function App() {
                 <div className="flex justify-between items-start mb-2">
                   <div>
                     <h3 className="text-slate-900 dark:text-slate-100 text-lg font-bold">Freelance AI & DevOps</h3>
-                    <p className="text-primary text-sm font-semibold">2023 - Present</p>
+                    <p className="text-primary text-sm font-semibold">05/2025 - Present</p>
                   </div>
                   <span className="bg-primary/20 text-primary px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Current</span>
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                  Architecting agentic AI systems and secure cloud infrastructure using MCPs and automated CI/CD pipelines.
+                  Leading DevOps migration projects and pioneering research in Agentic AI and Agentic Development.
                 </p>
                 <button className="w-full py-2 bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold rounded-lg text-sm transition-transform active:scale-95">
                   View Active Projects
@@ -126,25 +126,53 @@ function App() {
               <div className="absolute left-[10px] top-2 size-5 flex items-center justify-center bg-slate-400 dark:bg-slate-600 rounded-full z-10 border-4 border-background-light dark:border-background-dark"></div>
               <div>
                 <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">Lead DevSecOps Engineer</h3>
-                <p className="text-slate-500 dark:text-slate-400 text-sm">2022 - 2025</p>
-                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">Discovermarket: Focus on Azure CI/CD, FinOps, SOC 2 / ISO 27001 compliance.</p>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">11/2022 - 04/2025</p>
+                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">Discovermarket: Architected multi-region CI/CD, FinOps, SOC 2 / ISO 27001 compliance.</p>
               </div>
             </div>
 
             <div className="relative pl-12 pb-8">
               <div className="absolute left-[10px] top-2 size-5 flex items-center justify-center bg-slate-400 dark:bg-slate-600 rounded-full z-10 border-4 border-background-light dark:border-background-dark"></div>
               <div>
-                <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">Security Manager & SecOps</h3>
-                <p className="text-slate-500 dark:text-slate-400 text-sm">2021 - 2022</p>
-                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">HexTrust & UnifiedPost Group: Wazuh SIEM, Threat Detection.</p>
+                <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">Security Manager</h3>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">12/2021 - 06/2022</p>
+                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">HexTrust: Wazuh SIEM, achieving SOC 2 compliance, and Cloud Security Audits.</p>
+              </div>
+            </div>
+
+            <div className="relative pl-12 pb-8">
+              <div className="absolute left-[10px] top-2 size-5 flex items-center justify-center bg-slate-400 dark:bg-slate-600 rounded-full z-10 border-4 border-background-light dark:border-background-dark"></div>
+              <div>
+                <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">SecOps Engineer</h3>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">03/2021 - 12/2021</p>
+                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">UnifiedPost Group: Established SecOps team, Threat Detection, Wazuh & Suricata.</p>
+              </div>
+            </div>
+
+            <div className="relative pl-12 pb-8">
+              <div className="absolute left-[10px] top-2 size-5 flex items-center justify-center bg-slate-400 dark:bg-slate-600 rounded-full z-10 border-4 border-background-light dark:border-background-dark"></div>
+              <div>
+                <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">System / DevOps Engineer</h3>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">11/2015 - 02/2021</p>
+                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">Zyllem Pte Ltd: Hybrid cloud management, CI/CD automation, Kubernetes migration.</p>
+              </div>
+            </div>
+
+            <div className="relative pl-12 pb-8">
+              <div className="absolute left-[10px] top-2 size-5 flex items-center justify-center bg-slate-400 dark:bg-slate-600 rounded-full z-10 border-4 border-background-light dark:border-background-dark"></div>
+              <div>
+                <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">System Administrator</h3>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">11/2012 - 11/2015</p>
+                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">TPF – The Promotions Factory: Global IT Operations, AWS Cloud Migration.</p>
               </div>
             </div>
 
             <div className="relative pl-12">
               <div className="absolute left-[10px] top-2 size-5 flex items-center justify-center bg-slate-400 dark:bg-slate-600 rounded-full z-10 border-4 border-background-light dark:border-background-dark"></div>
               <div>
-                <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">System / DevOps Engineer</h3>
-                <p className="text-slate-500 dark:text-slate-400 text-sm">2015 - 2021</p>
+                <h3 className="text-slate-800 dark:text-slate-200 text-base font-bold">IT Technician</h3>
+                <p className="text-slate-500 dark:text-slate-400 text-sm">03/2012 - 11/2012</p>
+                <p className="text-slate-600 dark:text-slate-500 text-xs mt-1 italic leading-snug">Digital Work Network Co., Ltd: Network Deployment, Technical Support.</p>
               </div>
             </div>
           </div>
