@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import TerminalAbout from './TerminalAbout'
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('dark')
@@ -66,41 +67,13 @@ function App() {
           </div>
         </section>
 
-        {/* About Section */}
+        {/* Interactive About Terminal */}
         <section className="px-4 py-8">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">About Me</h2>
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Interactive Profile</h2>
             <div className="h-[1px] flex-1 bg-slate-300 dark:bg-slate-800 ml-4"></div>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="glass rounded-xl p-6 glow-border transition-all border border-slate-200 dark:border-white/5">
-              <div className="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
-                <span className="material-symbols-outlined text-3xl">shield_lock</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Cloud & Security</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Expertise in building hardened infrastructure with AWS/Azure and automated DevSecOps pipelines that integrate security into the heart of the SDLC.
-              </p>
-            </div>
-            <div className="glass rounded-xl p-6 glow-border transition-all border border-slate-200 dark:border-white/5">
-              <div className="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
-                <span className="material-symbols-outlined text-3xl">psychology</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Agentic AI</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Developing autonomous agents that leverage LLMs to automate complex workflows, enhancing operational efficiency and intelligent decision-making.
-              </p>
-            </div>
-            <div className="glass rounded-xl p-6 glow-border transition-all border border-slate-200 dark:border-white/5">
-              <div className="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
-                <span className="material-symbols-outlined text-3xl">hub</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2">Microservices</h3>
-              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                Designing distributed systems with Kubernetes and Service Meshes to ensure high availability, resilience, and horizontal scalability.
-              </p>
-            </div>
-          </div>
+          <TerminalAbout />
         </section>
 
         {/* Experience Timeline Section */}
@@ -191,6 +164,106 @@ function App() {
           </div>
         </section>
 
+        {/* Featured Projects Section */}
+        <section className="px-4 py-8 mt-6">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">Featured Architecture</h2>
+            <span className="material-symbols-outlined text-primary">architecture</span>
+          </div>
+          
+          <div className="space-y-6">
+            {/* Agentic AI Project */}
+            <div className="glass-card rounded-2xl overflow-hidden border border-primary/30 hover:glow-cyan transition-all duration-300">
+              <div className="h-2 w-full bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <span className="material-symbols-outlined text-primary">neurology</span>
+                    Agentic Workflow Automation
+                  </h3>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full border border-primary/20">AGENTIC AI</span>
+                </div>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  Autonomous agents designed around the Model Context Protocol (MCP) to automate multi-cloud configuration auditing and compliance checks.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">LLMs</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">MCP</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Python</span>
+                </div>
+                <div className="border-t border-slate-200 dark:border-white/10 pt-4 flex items-center justify-between">
+                  <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                    <span className="text-slate-800 dark:text-white block text-sm">90%</span> Task Autom.
+                  </div>
+                  <a href="https://github.com" target="_blank" rel="noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
+                    View Repo <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* DevOps Project */}
+            <div className="glass-card rounded-2xl overflow-hidden border border-blue-400/30 hover:shadow-[0_0_15px_rgba(96,165,250,0.3)] transition-all duration-300">
+              <div className="h-2 w-full bg-gradient-to-r from-blue-400 to-indigo-500"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <span className="material-symbols-outlined text-blue-500">all_inclusive</span>
+                    Multi-Region CI/CD Pipeline
+                  </h3>
+                  <span className="px-3 py-1 bg-blue-500/10 text-blue-500 dark:text-blue-400 text-xs font-bold rounded-full border border-blue-500/20">DEVOPS</span>
+                </div>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  Highly scalable, GitOps-driven pipeline utilizing Terraform and ArgoCD to orchestrate Kubernetes clusters across AWS and Azure, reducing deployment times drastically.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Kubernetes</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Terraform</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">ArgoCD</span>
+                </div>
+                <div className="border-t border-slate-200 dark:border-white/10 pt-4 flex items-center justify-between">
+                  <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                    <span className="text-slate-800 dark:text-white block text-sm">50%</span> Time Saved
+                  </div>
+                  <a href="https://github.com" target="_blank" rel="noreferrer" className="text-blue-500 dark:text-blue-400 text-sm font-bold flex items-center gap-1 hover:underline">
+                    View Pipeline <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Cyber Security Project */}
+            <div className="glass-card rounded-2xl overflow-hidden border border-accent-green/30 hover:glow-green transition-all duration-300">
+              <div className="h-2 w-full bg-gradient-to-r from-green-400 to-emerald-500"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <span className="material-symbols-outlined text-accent-green">security</span>
+                    Zero-Trust SIEM Integration
+                  </h3>
+                  <span className="px-3 py-1 bg-accent-green/10 text-emerald-600 dark:text-accent-green text-xs font-bold rounded-full border border-accent-green/20">CYBER SECURITY</span>
+                </div>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  Comprehensive Wazuh and Suricata implementation ensuring SOC 2 compliance. Automated threat hunting and real-time vulnerability scanning for containerized workloads.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Wazuh</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Suricata</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">SOC 2</span>
+                </div>
+                <div className="border-t border-slate-200 dark:border-white/10 pt-4 flex items-center justify-between">
+                  <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                    <span className="text-slate-800 dark:text-white block text-sm">40%</span> Threat Detect.
+                  </div>
+                  <a href="https://github.com" target="_blank" rel="noreferrer" className="text-emerald-600 dark:text-accent-green text-sm font-bold flex items-center gap-1 hover:underline">
+                    View Ruleset <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Technical Arsenal Section */}
         <section className="px-4 mt-12 mb-8">
           <div className="flex items-center justify-between mb-6">
@@ -247,6 +320,36 @@ function App() {
               <div className="glass-card py-3 px-1 rounded-lg border border-slate-300 dark:border-slate-700 flex flex-col items-center text-center">
                 <span className="text-[10px] font-bold">AWS/AZURE</span>
               </div>
+            </div>
+          </div>
+        </section>
+        {/* Latest Insights Section */}
+        <section className="px-4 py-8 mt-6">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">Latest Insights</h2>
+            <span className="material-symbols-outlined text-primary">article</span>
+          </div>
+          <div className="glass rounded-xl overflow-hidden relative border border-slate-200 dark:border-white/10">
+            <div className="h-32 bg-slate-800 relative z-0">
+              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-900/80 to-blue-900/80 mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/40 via-transparent to-transparent"></div>
+            </div>
+            <div className="p-6 -mt-10 relative z-10">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="size-12 rounded-lg bg-background-light dark:bg-background-dark border border-primary/30 flex items-center justify-center shadow-lg">
+                  <span className="material-symbols-outlined text-primary font-bold">lock_open</span>
+                </div>
+                <div>
+                  <p className="text-xs text-primary font-bold uppercase tracking-widest">Thought Leadership</p>
+                  <h4 className="font-bold text-slate-900 dark:text-white text-lg">Zero Trust in Agentic AI Modals</h4>
+                </div>
+              </div>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                How to integrate strict privilege boundaries and SOC 2 compliant logging into Model Context Protocol (MCP) servers to prevent autonomous lateral movement.
+              </p>
+              <a href="#" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline w-fit">
+                Read Abstract <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
             </div>
           </div>
         </section>
