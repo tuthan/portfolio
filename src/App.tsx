@@ -36,7 +36,7 @@ function App() {
 
       <main className="relative pb-24 md:max-w-4xl md:mx-auto">
         {/* Hero Section */}
-        <section className="px-4 pt-12 pb-8">
+        <section id="home" className="px-4 pt-12 pb-8">
           <div className="glass rounded-xl p-8 flex flex-col items-center text-center relative overflow-hidden">
             <div className="absolute -top-24 -right-24 size-48 bg-primary/20 blur-[80px] rounded-full"></div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold mb-6">
@@ -49,7 +49,7 @@ function App() {
             <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed mb-8 max-w-sm">
               Architecting secure, autonomous, and scalable ecosystems through Agentic AI and Cloud Security.
             </p>
-            <div className="flex flex-col sm:flex-row w-full gap-3 sm:justify-center mt-2">
+            <div id="contact" className="flex flex-col sm:flex-row w-full gap-3 sm:justify-center mt-2">
               <a 
                 href="https://github.com/tuthan" 
                 target="_blank" 
@@ -89,7 +89,7 @@ function App() {
         </section>
 
         {/* Experience Timeline Section */}
-        <section className="px-4 py-8 mt-6">
+        <section id="work" className="px-4 py-8 mt-6">
           <h2 className="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight mb-6">Experience Timeline</h2>
           <div className="space-y-0 relative">
             <div className="absolute left-[19px] top-4 bottom-4 w-[2px] bg-slate-300 dark:bg-slate-700"></div>
@@ -271,7 +271,7 @@ function App() {
         </section>
 
         {/* Technical Arsenal Section */}
-        <section className="px-4 mt-12 mb-8">
+        <section id="arsenal" className="px-4 mt-12 mb-8">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-slate-900 dark:text-slate-100 text-2xl font-bold leading-tight tracking-tight">Technical Arsenal</h2>
             <span className="material-symbols-outlined text-primary">shield</span>
@@ -364,21 +364,21 @@ function App() {
       {/* Bottom Navigation Bar */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
         <div className="flex gap-2 border-t border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg px-4 pb-6 pt-3">
-          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#">
+          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-primary" href="#home">
             <span className="material-symbols-outlined">home</span>
             <p className="text-[10px] font-medium uppercase tracking-wider">Home</p>
           </a>
-          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#contact">
+            <span className="material-symbols-outlined">mail</span>
+            <p className="text-[10px] font-medium uppercase tracking-wider">Contact</p>
+          </a>
+          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#work">
             <span className="material-symbols-outlined">work</span>
             <p className="text-[10px] font-medium uppercase tracking-wider">Work</p>
           </a>
-          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#">
+          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#arsenal">
             <span className="material-symbols-outlined">shield</span>
             <p className="text-[10px] font-medium uppercase tracking-wider">Arsenal</p>
-          </a>
-          <a className="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400" href="#">
-            <span className="material-symbols-outlined">mail</span>
-            <p className="text-[10px] font-medium uppercase tracking-wider">Contact</p>
           </a>
         </div>
       </nav>
