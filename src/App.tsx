@@ -179,24 +179,24 @@ function App() {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary">neurology</span>
-                    Agentic Workflow Automation
+                    Agent-Kryptos
                   </h3>
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full border border-primary/20">AGENTIC AI</span>
                 </div>
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                  Autonomous agents designed around the Model Context Protocol (MCP) to automate multi-cloud configuration auditing and compliance checks.
+                  Zero-knowledge secret provisioning for AI agents. HPKE end-to-end encryption ensuring no plaintext secrets ever touch the wire or the agent itself.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">LLMs</span>
-                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">MCP</span>
-                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Python</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">HPKE</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Zero-Trust</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Cryptography</span>
                 </div>
                 <div className="border-t border-slate-200 dark:border-white/10 pt-4 flex items-center justify-between">
                   <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
-                    <span className="text-slate-800 dark:text-white block text-sm">90%</span> Task Autom.
+                    <span className="text-slate-800 dark:text-white block text-sm">11</span> Security Layers
                   </div>
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
-                    View Repo <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  <a href="https://kryptos.atas.tech/" target="_blank" rel="noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
+                    View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                   </a>
                 </div>
               </div>
@@ -225,9 +225,6 @@ function App() {
                   <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
                     <span className="text-slate-800 dark:text-white block text-sm">50%</span> Time Saved
                   </div>
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="text-blue-500 dark:text-blue-400 text-sm font-bold flex items-center gap-1 hover:underline">
-                    View Pipeline <span className="material-symbols-outlined text-sm">open_in_new</span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -255,9 +252,6 @@ function App() {
                   <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
                     <span className="text-slate-800 dark:text-white block text-sm">40%</span> Threat Detect.
                   </div>
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="text-emerald-600 dark:text-accent-green text-sm font-bold flex items-center gap-1 hover:underline">
-                    View Ruleset <span className="material-symbols-outlined text-sm">open_in_new</span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -340,15 +334,15 @@ function App() {
                   <span className="material-symbols-outlined text-primary font-bold">lock_open</span>
                 </div>
                 <div>
-                  <p className="text-xs text-primary font-bold uppercase tracking-widest">Thought Leadership</p>
-                  <h4 className="font-bold text-slate-900 dark:text-white text-lg">Zero Trust in Agentic AI Modals</h4>
+                  <p className="text-xs text-primary font-bold uppercase tracking-widest">Case Study</p>
+                  <h4 className="font-bold text-slate-900 dark:text-white text-lg">Zero-Knowledge Secret Provisioning</h4>
                 </div>
               </div>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                How to integrate strict privilege boundaries and SOC 2 compliant logging into Model Context Protocol (MCP) servers to prevent autonomous lateral movement.
+                How agent-Kryptos uses HPKE (RFC 9180) and strict privilege boundaries to deliver secrets to AI workflows without exposing them to the agents themselves.
               </p>
-              <a href="#" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline w-fit">
-                Read Abstract <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              <a href="https://kryptos.atas.tech/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline w-fit">
+                Read the Docs <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </a>
             </div>
           </div>
