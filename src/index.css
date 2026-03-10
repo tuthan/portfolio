@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-cyan-neon: #25c0f4;
+  --color-green-neon: #00ff66;
+  --color-dark-bg: #0a0f18;
+  --color-dark-card: rgba(18, 25, 38, 0.7);
+  --color-light-bg: #f8fafc;
+  --color-light-card: rgba(255, 255, 255, 0.8);
+}
+
+@layer base {
+  :root {
+    --bg-color: var(--color-light-bg);
+    --text-color: #0f172a;
+    --card-bg: var(--color-light-card);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --neon-accent: var(--color-cyan-neon);
+  }
+
+  .dark {
+    --bg-color: var(--color-dark-bg);
+    --text-color: #f8fafc;
+    --card-bg: var(--color-dark-card);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --neon-accent: var(--color-green-neon);
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .glass {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Neon glow */
+.neon-border {
+  box-shadow: 0 0 10px var(--neon-accent), inset 0 0 5px var(--neon-accent);
+  border-color: var(--neon-accent);
+}
