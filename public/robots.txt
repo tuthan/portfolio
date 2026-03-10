@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tuthan.github.io/portfolio/sitemap.xml
