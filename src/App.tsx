@@ -47,13 +47,21 @@ function App() {
             <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed mb-8 max-w-sm">
               Architecting secure, autonomous, and scalable ecosystems through Agentic AI and Cloud Security.
             </p>
-            <div className="flex flex-col sm:flex-row w-full gap-3 sm:justify-center">
-              <button className="bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold py-4 sm:px-8 rounded-xl transition-all">
+            <div className="flex flex-col sm:flex-row w-full gap-3 sm:justify-center mt-2">
+              <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold py-4 sm:px-8 rounded-xl transition-all flex items-center justify-center"
+              >
                 View Projects
-              </button>
-              <button className="glass text-slate-900 dark:text-slate-100 font-bold py-4 sm:px-8 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+              </a>
+              <a 
+                href="mailto:hung@atas.tech" 
+                className="glass text-slate-900 dark:text-slate-100 font-bold py-4 sm:px-8 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 transition-all flex items-center justify-center"
+              >
                 Get In Touch
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -116,9 +124,14 @@ function App() {
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
                   Leading DevOps migration projects and pioneering research in Agentic AI and Agentic Development.
                 </p>
-                <button className="w-full py-2 bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold rounded-lg text-sm transition-transform active:scale-95">
+                <a 
+                  href="https://github.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full text-center py-2 bg-primary hover:bg-primary/90 text-background-light dark:text-background-dark font-bold rounded-lg text-sm transition-transform active:scale-95"
+                >
                   View Active Projects
-                </button>
+                </a>
               </div>
             </div>
 
