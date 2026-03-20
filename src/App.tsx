@@ -29,9 +29,14 @@ function App() {
           </div>
           <span className="font-bold text-lg tracking-tight">Hung Vo</span>
         </div>
-        <button className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800/50 text-primary" onClick={toggleTheme}>
-          <span className="material-symbols-outlined">{theme === 'light' ? 'dark_mode' : 'light_mode'}</span>
+        <button 
+          className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800/50 text-primary" 
+          onClick={toggleTheme}
+          aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+        >
+          <span className="material-symbols-outlined" aria-hidden="true">{theme === 'light' ? 'dark_mode' : 'light_mode'}</span>
         </button>
+
       </nav>
 
       <main className="relative pb-24 md:max-w-4xl md:mx-auto">
