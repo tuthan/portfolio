@@ -18,7 +18,7 @@ Architecting secure, autonomous, and scalable ecosystems through Agentic AI and 
 
 ## Notable Projects
 
-- **Agent-Kryptos**: Zero-knowledge secret provisioning for AI agents. Uses HPKE RFC 9180.
+- **BlindPass**: Zero-knowledge secret provisioning for AI agents. Uses HPKE RFC 9180.
 - **Multi-Region CI/CD Pipeline**: Terraform and ArgoCD for AWS/Azure clusters.
 - **Zero-Trust SIEM Integration**: Wazuh and Suricata for SOC 2 compliance.
 

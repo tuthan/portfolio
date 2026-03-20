@@ -7,7 +7,7 @@ A premium, interactive, and high-fidelity portfolio website built to showcase ex
 
 ## ✨ Key Features
 - **Interactive Terminal:** An embedded React terminal component for a unique, developer-centric "About Me" experience.
-- **Agentic AI & DevOps Focus:** Dedicated architecture highlights for **Agent-Kryptos**, Multi-Region CI/CD, and Zero-Trust SIEM.
+- **Agentic AI & DevOps Focus:** Dedicated architecture highlights for **BlindPass**, Multi-Region CI/CD, and Zero-Trust SIEM.
 - **Premium Design:** Glassmorphism aesthetic with high-fidelity components prototyped using **Stitch MCP**.
 - **Dark/Light Mode:** Seamless theme toggling with custom CSS variables and Tailwind CSS.
 - **Fully Responsive:** Optimized for desktop and mobile devices.

@@ -196,7 +196,7 @@ function App() {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary">neurology</span>
-                    Agent-Kryptos
+                    BlindPass
                   </h3>
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full border border-primary/20">AGENTIC AI</span>
                 </div>
@@ -212,7 +212,7 @@ function App() {
                   <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
                     <span className="text-slate-800 dark:text-white block text-sm">11</span> Security Layers
                   </div>
-                  <a href="https://kryptos.atas.tech/" target="_blank" rel="noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
+                  <a href="https://blindpass.atas.tech/" target="_blank" rel="noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
                     View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
                   </a>
                 </div>
@@ -356,9 +356,9 @@ function App() {
                 </div>
               </div>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
-                How agent-Kryptos uses HPKE (RFC 9180) and strict privilege boundaries to deliver secrets to AI workflows without exposing them to the agents themselves.
+                How blindpass uses HPKE (RFC 9180) and strict privilege boundaries to deliver secrets to AI workflows without exposing them to the agents themselves.
               </p>
-              <a href="https://kryptos.atas.tech/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline w-fit">
+              <a href="https://blindpass.atas.tech/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline w-fit">
                 Read the Docs <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </a>
             </div>
