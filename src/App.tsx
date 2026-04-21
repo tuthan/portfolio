@@ -272,6 +272,66 @@ function App() {
                 </div>
               </div>
             </div>
+
+            {/* BlindDrop Project */}
+            <div className="glass-card rounded-2xl overflow-hidden border border-amber-400/30 hover:shadow-[0_0_15px_rgba(251,191,36,0.3)] transition-all duration-300">
+              <div className="h-2 w-full bg-gradient-to-r from-amber-400 to-orange-500"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <span className="material-symbols-outlined text-amber-500">share</span>
+                    BlindDrop
+                  </h3>
+                  <span className="px-3 py-1 bg-amber-500/10 text-amber-500 dark:text-amber-400 text-xs font-bold rounded-full border border-amber-500/20">AGENTIC AI</span>
+                </div>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  Secure, time-limited secret sharing with zero-knowledge architecture. Secrets are encrypted client-side and self-destruct after single retrieval or expiration.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">E2EE</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Self-Destruct</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">AES-GCM</span>
+                </div>
+                <div className="border-t border-slate-200 dark:border-white/10 pt-4 flex items-center justify-between">
+                  <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                    <span className="text-slate-800 dark:text-white block text-sm">Secure</span> Secret Drop
+                  </div>
+                  <a href="https://blinddrop.atas.tech/" target="_blank" rel="noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
+                    View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Dependency Guard Project */}
+            <div className="glass-card rounded-2xl overflow-hidden border border-purple-400/30 hover:shadow-[0_0_15px_rgba(192,132,252,0.3)] transition-all duration-300">
+              <div className="h-2 w-full bg-gradient-to-r from-purple-400 to-pink-500"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                    <span className="material-symbols-outlined text-purple-500">verified_user</span>
+                    Dependency Guard
+                  </h3>
+                  <span className="px-3 py-1 bg-purple-500/10 text-purple-500 dark:text-purple-400 text-xs font-bold rounded-full border border-purple-500/20">AGENT SKILL</span>
+                </div>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                  Agentic skill for supply-chain security. Automatically audits dependencies during the coding loop using Socket.dev to prevent malicious package injection.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Agentic AI</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Security</span>
+                  <span className="text-xs font-mono px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-slate-600 dark:text-slate-300">Socket.dev</span>
+                </div>
+                <div className="border-t border-slate-200 dark:border-white/10 pt-4 flex items-center justify-between">
+                  <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                    <span className="text-slate-800 dark:text-white block text-sm">ClawHub</span> Integration
+                  </div>
+                  <a href="https://clawhub.ai/tuthan/dependency-guard" target="_blank" rel="noreferrer" className="text-primary text-sm font-bold flex items-center gap-1 hover:underline">
+                    View Project <span className="material-symbols-outlined text-sm">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -287,14 +347,18 @@ function App() {
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
               Agentic AI & LLMs
             </h3>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               <div className="glass-card p-4 rounded-lg border-t-2 border-primary/50 flex flex-col items-center text-center">
                 <span className="material-symbols-outlined text-primary mb-2">neurology</span>
-                <span className="text-sm font-semibold">Agentic Dev</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">Agentic Dev</span>
               </div>
               <div className="glass-card p-4 rounded-lg border-t-2 border-primary/50 flex flex-col items-center text-center">
                 <span className="material-symbols-outlined text-primary mb-2">hub</span>
-                <span className="text-sm font-semibold">MCPs</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">MCPs</span>
+              </div>
+              <div className="glass-card p-4 rounded-lg border-t-2 border-primary/50 flex flex-col items-center text-center">
+                <span className="material-symbols-outlined text-primary mb-2">psychology</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">Agent Skill</span>
               </div>
             </div>
           </div>
@@ -304,14 +368,18 @@ function App() {
               <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse"></span>
               Cyber Security
             </h3>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               <div className="glass-card p-4 rounded-lg border-t-2 border-accent-green/50 flex flex-col items-center text-center">
                 <span className="material-symbols-outlined text-accent-green mb-2">policy</span>
-                <span className="text-sm font-semibold">ISO 27001 / SOC 2</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">ISO 27001 / SOC 2</span>
               </div>
               <div className="glass-card p-4 rounded-lg border-t-2 border-accent-green/50 flex flex-col items-center text-center">
                 <span className="material-symbols-outlined text-accent-green mb-2">radar</span>
-                <span className="text-sm font-semibold">Threat Detection</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">Threat Detect</span>
+              </div>
+              <div className="glass-card p-4 rounded-lg border-t-2 border-accent-green/50 flex flex-col items-center text-center">
+                <span className="material-symbols-outlined text-accent-green mb-2">history_edu</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">Audit SC</span>
               </div>
             </div>
           </div>
@@ -321,15 +389,18 @@ function App() {
               <span className="w-2 h-2 rounded-full bg-slate-500"></span>
               Cloud Infrastructure
             </h3>
-            <div className="grid grid-cols-3 gap-2 text-slate-700 dark:text-slate-300">
-              <div className="glass-card py-3 px-1 rounded-lg border border-slate-300 dark:border-slate-700 flex flex-col items-center text-center">
-                <span className="text-[10px] font-bold">KUBERNETES</span>
+            <div className="grid grid-cols-3 gap-3">
+              <div className="glass-card p-4 rounded-lg border-t-2 border-slate-500/50 flex flex-col items-center text-center">
+                <span className="material-symbols-outlined text-slate-500 mb-2">view_in_ar</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">Kubernetes</span>
               </div>
-              <div className="glass-card py-3 px-1 rounded-lg border border-slate-300 dark:border-slate-700 flex flex-col items-center text-center">
-                <span className="text-[10px] font-bold">TERRAFORM</span>
+              <div className="glass-card p-4 rounded-lg border-t-2 border-slate-500/50 flex flex-col items-center text-center">
+                <span className="material-symbols-outlined text-slate-500 mb-2">architecture</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">Terraform</span>
               </div>
-              <div className="glass-card py-3 px-1 rounded-lg border border-slate-300 dark:border-slate-700 flex flex-col items-center text-center">
-                <span className="text-[10px] font-bold">AWS/AZURE</span>
+              <div className="glass-card p-4 rounded-lg border-t-2 border-slate-500/50 flex flex-col items-center text-center">
+                <span className="material-symbols-outlined text-slate-500 mb-2">cloud</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider">AWS/Azure</span>
               </div>
             </div>
           </div>
