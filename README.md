@@ -1,57 +1,68 @@
-# Hung Vo | DevSecOps & AI Engineer Portfolio
+# Hung Vo | AI Security Engineer Portfolio
 
-A premium, interactive, and high-fidelity portfolio website built to showcase expertise in Cloud Security, Automation, and Agentic AI.
+Personal portfolio for [Hung Vo](https://www.linkedin.com/in/hungvotrung/): AI Security Engineer, with fourteen years in DevSecOps and platform engineering behind it.
 
-## 🚀 Live Demo
+## Live
+
 [https://portfolio.atas.tech/](https://portfolio.atas.tech/)
 
-## ✨ Key Features
-- **Interactive Terminal:** An embedded React terminal component for a unique, developer-centric "About Me" experience.
-- **Agentic AI & DevOps Focus:** Dedicated architecture highlights for **BlindPass**, Multi-Region CI/CD, and Zero-Trust SIEM.
-- **Premium Design:** Glassmorphism aesthetic with high-fidelity components prototyped using **Stitch MCP**.
-- **Dark/Light Mode:** Seamless theme toggling with custom CSS variables and Tailwind CSS.
-- **Fully Responsive:** Optimized for desktop and mobile devices.
-- **SEO Optimized:** Meta tags for search engines and high-impact social sharing (Open Graph/Twitter Cards).
-- **Verified Commits:** All contributions are cryptographically signed using SSH keys.
+## What's on the page
 
-## 🛠️ Tech Stack
-- **Framework:** [Vite](https://vitejs.dev/) + [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Icons:** [Lucide React](https://lucide.dev/) & Material Symbols
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Deployment:** [GitHub Pages](https://pages.github.com/) via GitHub Actions
+- **Hero and stats** — role, positioning, and four at-a-glance numbers for recruiters.
+- **Featured: OmaSafe** — the 2026 flagship: a Rust CLI, an Omarchy bar plugin, and a multi-host agent skill for evidence-first plugin review, with an architecture flow and the design principles behind it.
+- **Projects grid** — filterable by Agentic AI, Security, Omarchy and DevOps. Covers BlindPass, Dependency Guard, the OmaSafe agent skill, Dropdown Terminal, Unraid Monitor, Lunar Calendar, BlindDrop, and past platform and SIEM work. Plugins listed on the Omarchy marketplace show live engagement: views, install-command copies and hearts.
+- **Interactive terminal** — `help`, `whoami`, `projects`, `skills`, `experience`, `contact`, `open <project-id>`, with Tab completion and command history.
+- **Experience timeline, skills, contact** — fourteen years from systems administration to security leadership.
 
-## 📥 Getting Started
+## Design notes
 
-### Prerequisites
-- Node.js (v18+)
-- npm
+- Dark and light themes. The choice persists in `localStorage`, falls back to the system preference, and can be forced with `?theme=light` or `?theme=dark`.
+- Space Grotesk for text, JetBrains Mono for labels, chips and the terminal. Lucide icons only; no icon font.
+- Framer Motion reveals honour `prefers-reduced-motion`.
+- All content lives in `src/data/portfolio.ts`. Update a project or a role there and every section, plus the terminal, follows.
+- SEO: JSON-LD `Person` with `SoftwareApplication` entries, Open Graph card at `public/og.png`, `llms.txt` for AI agents, sitemap and robots.
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/tuthan/portfolio.git
-   cd portfolio
-   ```
+## Tech stack
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+- [Vite](https://vitejs.dev/) + [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/) and [Framer Motion](https://www.framer.com/motion/)
+- GitHub Pages via GitHub Actions
 
-3. Start development server:
-   ```bash
-   npm run dev
-   ```
+## Development
 
-## 🏗️ Deployment
-This project uses GitHub Actions for automated deployment. Pushing to the `main` branch triggers a build (`npm run build`) and deploys the `dist` folder to the `gh-pages` branch.
+```bash
+npm ci
+npm run dev      # local dev server
+npm run build    # type-check and production build
+npm run lint
+npm run preview  # serve the production build
+npm run stats    # refresh the Omarchy marketplace snapshot
+```
 
-## 🔒 Security & Verification
-All commits in this repository are signed using the `agent_kryptos_ed25519` SSH key.
-To verify signatures locally:
-1. Import the public key into your `allowed_signers` file.
-2. Run `git log --show-signature`.
+### Marketplace stats
+
+`npm run stats` reads the public, read-only engagement endpoint that powers
+plugins.omarchy.org and rewrites two generated artifacts: the snapshot in
+`src/data/pluginStats.ts` and the marked block in `public/llms.txt`. It records
+nothing, so it never posts a view, copy or heart event of its own.
+
+The numbers are baked in at build time rather than fetched in the browser. The
+endpoint returns every plugin on the marketplace and is served `no-store`, so a
+runtime fetch would cost each visitor the full payload for four numbers.
+
+The deploy workflow runs the script before the build, so a push refreshes the
+figures. On a network failure it logs a warning, leaves the committed snapshot
+in place and exits 0, so the build cannot break on a third-party outage. Every
+figure on the page is labelled with the date it was captured.
+
+## Deployment
+
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes `dist/` to GitHub Pages under the custom domain in `public/CNAME`.
+
+## Security
+
+Commits are signed. To verify locally, add the public key to your `allowed_signers` file and run `git log --show-signature`.
 
 ---
-Made with ❤️ by [Hung Vo](https://github.com/tuthan)
+Made by [Hung Vo](https://github.com/tuthan)

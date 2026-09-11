@@ -1,32 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script>
+      (function () {
+        try {
+          var q = new URLSearchParams(location.search).get('theme');
+          var t = (q === 'light' || q === 'dark') ? q : localStorage.getItem('hv-theme');
+          if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          document.documentElement.classList.toggle('dark', t === 'dark');
+          document.documentElement.style.colorScheme = t;
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDGL4Q7BF3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-XDGL4Q7BF3');
     </script>
-    <meta charset="UTF-8" />
 
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="apple-touch-icon" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.json" />
-    
+
     <!-- Google Search Console Verification Placeholder -->
     <!-- <meta name="google-site-verification" content="YOUR_GSC_CODE_HERE" /> -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Hung Vo | DevSecOps & AI Engineer</title>
-    <meta name="description" content="Hung Vo is a DevSecOps and AI Engineer specializing in secure, autonomous, and scalable cloud ecosystems. Expert in Agentic AI, Kubernetes, and Zero-Trust architecture." />
-    <meta name="keywords" content="Hung Vo, DevSecOps, AI Engineer, Agentic AI, Cloud Security, Kubernetes, Terraform, MCP, Model Context Protocol, Vietnam Engineer, SecOps, DevSecOps Engineer Portfolio" />
+    <title>Hung Vo | AI Security Engineer</title>
+    <meta name="description" content="Hung Vo is an AI Security Engineer working on the runtime and supply chain around AI agents: zero-knowledge secret provisioning, dependency guardrails for coding agents, and evidence-first review of unsandboxed code. Fourteen years in DevSecOps, Kubernetes platforms, SOC 2 and ISO 27001." />
+    <meta name="keywords" content="Hung Vo, AI Security Engineer, AI Security, Agent Security, Agentic AI, LLM Security, Prompt Injection, Supply Chain Security, Agent Skills, Claude Code, Codex, MCP, Model Context Protocol, DevSecOps, DevOps, Platform Engineering, Kubernetes, Terraform, ArgoCD, GitOps, FinOps, AWS, Azure, Cloud Security, SOC 2, ISO 27001, Zero-Trust, OmaSafe, BlindPass, Dependency Guard, Omarchy, Omarchy plugin, Hyprland, Quickshell" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Hung Vo" />
-
     <link rel="canonical" href="https://portfolio.atas.tech/" />
 
     <!-- JSON-LD for AI Agents & Search Engines -->
@@ -36,33 +45,56 @@
       "@type": "Person",
       "name": "Hung Vo",
       "url": "https://portfolio.atas.tech/",
+      "image": "https://portfolio.atas.tech/profile.jpg",
+      "email": "mailto:hung@atas.tech",
       "sameAs": [
         "https://github.com/tuthan",
-        "https://www.linkedin.com/in/hungvotrung/"
+        "https://www.linkedin.com/in/hungvotrung/",
+        "https://atas.tech/"
       ],
-      "jobTitle": "DevSecOps & AI Engineer",
-      "description": "Architecting secure, autonomous, and scalable ecosystems through Agentic AI and Cloud Security.",
-      "knowsAbout": ["DevSecOps", "Agentic AI", "Cloud Security", "Kubernetes", "Zero-Trust Architecture", "Terraform"]
+      "jobTitle": ["AI Security Engineer", "DevSecOps Engineer", "Platform Engineer"],
+      "worksFor": { "@type": "Organization", "name": "atas.tech", "url": "https://atas.tech/" },
+      "description": "Securing the agents that write and ship code. OmaSafe, BlindPass, Dependency Guard and four Omarchy plugins, on fourteen years of DevSecOps and platform engineering.",
+      "knowsAbout": [
+        "AI Security", "Agent Security", "Agentic AI", "Agent Skills", "Model Context Protocol",
+        "Prompt Injection Defence", "Supply Chain Security", "Zero-Knowledge Secret Provisioning",
+        "DevSecOps", "DevOps", "Platform Engineering", "Kubernetes", "Terraform", "ArgoCD", "GitOps",
+        "FinOps", "AWS", "Azure", "Cloud Security", "Zero-Trust Architecture", "SOC 2", "ISO 27001",
+        "Omarchy", "Hyprland", "Rust", "TypeScript"
+      ],
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://portfolio.atas.tech/" },
+      "subjectOf": [
+        { "@type": "SoftwareApplication", "name": "OmaSafe", "applicationCategory": "SecurityApplication", "operatingSystem": "Linux", "url": "https://github.com/tuthan/omasafe", "description": "Bounded, evidence-first review tool for Omarchy plugins, host posture, and pre-install candidates." },
+        { "@type": "SoftwareApplication", "name": "BlindPass", "applicationCategory": "SecurityApplication", "url": "https://blindpass.atas.tech/", "description": "Zero-knowledge secret provisioning for AI agents using HPKE." },
+        { "@type": "SoftwareApplication", "name": "Dependency Guard", "applicationCategory": "DeveloperApplication", "url": "https://clawhub.ai/tuthan/dependency-guard", "description": "Supply-chain guardrail skill for agentic coding, backed by Socket." },
+        { "@type": "SoftwareApplication", "name": "Dropdown Terminal", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Linux", "url": "https://github.com/tuthan/omarchy-dropdown-terminal", "description": "Floating dropdown terminal plugin for the Omarchy Linux desktop." }
+      ]
     }
     </script>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://portfolio.atas.tech/" />
-    <meta property="og:title" content="Hung Vo | DevSecOps & AI Engineer" />
-    <meta property="og:description" content="Architecting secure, autonomous, and scalable ecosystems through Agentic AI and Cloud Security." />
-    <meta property="og:image" content="https://portfolio.atas.tech/profile.jpg" />
+    <meta property="og:title" content="Hung Vo | AI Security Engineer" />
+    <meta property="og:description" content="Securing the agents that write and ship code. OmaSafe, BlindPass, Dependency Guard and four Omarchy plugins, on fourteen years of DevSecOps and platform engineering." />
+    <meta property="og:image" content="https://portfolio.atas.tech/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Hung Vo, AI Security Engineer" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://portfolio.atas.tech/" />
-    <meta property="twitter:title" content="Hung Vo | DevSecOps & AI Engineer" />
-    <meta property="twitter:description" content="Architecting secure, autonomous, and scalable ecosystems through Agentic AI and Cloud Security." />
-    <meta property="twitter:image" content="https://portfolio.atas.tech/profile.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://portfolio.atas.tech/" />
+    <meta name="twitter:title" content="Hung Vo | AI Security Engineer" />
+    <meta name="twitter:description" content="Securing the agents that write and ship code. OmaSafe, BlindPass, Dependency Guard and four Omarchy plugins, on fourteen years of DevSecOps and platform engineering." />
+    <meta name="twitter:image" content="https://portfolio.atas.tech/og.png" />
 
-    <meta name="theme-color" content="#0ea5e9" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a1216" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f8f9" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

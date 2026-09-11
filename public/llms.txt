@@ -1,30 +1,67 @@
 # Hung Vo | Portfolio
 
-Architecting secure, autonomous, and scalable ecosystems through Agentic AI and Cloud Security.
+Fourteen years in DevSecOps, now securing the agents that write and ship code.
 
 ## Profile Summary
 
 - **Name**: Hung Vo
-- **Roles**: DevSecOps Engineer, AI Engineer
-- **Specialties**: Agentic AI, Cloud Security, Kubernetes, Zero-Trust Architecture
-- **Location**: Vietnam
+- **Role**: AI Security Engineer
+- **Also**: DevSecOps Engineer, Platform Engineer
+- **Focus**: The runtime and supply chain around AI agents rather than model internals. Bounding what an agent can see, what it can do, and what it can be talked into.
+- **Foundation**: Kubernetes platforms, multi-cloud CI/CD, SIEM engineering, SOC 2 and ISO 27001 compliance
+- **Lab**: atas.tech (https://atas.tech/)
 - **Contact**: [Email](mailto:hung@atas.tech) | [LinkedIn](https://www.linkedin.com/in/hungvotrung/) | [GitHub](https://github.com/tuthan)
 
-## Experience Background
+## Featured: OmaSafe (2026)
 
-- **Freelance AI & DevOps (05/2025 - Present)**: Researching Agentic AI and Development.
-- **Lead DevSecOps Engineer (11/2022 - 04/2025)**: Multi-region CI/CD, FinOps, Compliance.
-- **Security Manager (12/2021 - 06/2022)**: SIEM and Security Audits.
+Trust and security tooling for Omarchy Linux. Omarchy plugins are QML/JavaScript loaded unsandboxed with full user permissions from mutable Git repositories; the marketplace validates one commit at listing time. OmaSafe closes the gap between what was validated once and what is running now. It never executes plugin code, runs unprivileged, and never produces a single safety score.
 
-## Notable Projects
+- **omasafe-cli** (Rust, v0.3.1): plugin inventory, marketplace correlation, trust baselines, drift review, bounded payload analysis, host posture, pre-install candidate scans. https://github.com/tuthan/omasafe
+- **OmaSafe bar plugin** (QML/Quickshell, v0.5.0): Plugins, Analysis, Rules, Posture and Source Scan views. https://github.com/tuthan/omasafe-plugin | https://plugins.omarchy.org/plugin.html?id=io.github.tuthan.omasafe
+- **omasafe-plugin-review agent skill** (v1.4.0): Claude Code, Codex, Cursor, OpenCode. https://github.com/tuthan/omasafe-agent-skill
 
-- **BlindPass**: Zero-knowledge secret provisioning for AI agents. Uses HPKE RFC 9180.
-- **Multi-Region CI/CD Pipeline**: Terraform and ArgoCD for AWS/Azure clusters.
-- **Zero-Trust SIEM Integration**: Wazuh and Suricata for SOC 2 compliance.
+## Agent security projects
+
+- **BlindPass**: Zero-knowledge secret provisioning for AI agents using HPKE (RFC 9180). Plaintext never reaches the LLM or the server. https://blindpass.atas.tech/
+- **BlindDrop**: One-time, self-destructing secret sharing with client-side AES-GCM. https://blinddrop.atas.tech/
+- **Dependency Guard** (v1.2.0): Supply-chain guardrail skill that reviews every dependency change with Socket before manifests or lockfiles change. Ships for Claude Code, Codex, OpenClaw and ClawHub. https://clawhub.ai/tuthan/dependency-guard
+
+## Marketplace traction
+
+<!-- plugin-stats:start -->
+Marketplace engagement on plugins.omarchy.org, as of 2026-09-11:
+
+- **Dropdown Terminal**: 1696 views, 228 install-command copies, 31 hearts.
+- **Unraid Monitor**: 218 views, 40 install-command copies, 9 hearts.
+- **OmaSafe bar plugin**: 139 views, 3 install-command copies, 1 heart.
+- **Lunar Calendar**: 62 views, 8 install-command copies, 1 heart.
+<!-- plugin-stats:end -->
+
+## Omarchy plugins (Quickshell / Hyprland)
+
+- **Dropdown Terminal** (v2.3.0): Floating overlay terminal with bounded effects and privacy-preserving command indicators. https://github.com/tuthan/omarchy-dropdown-terminal
+- **Unraid Monitor** (v1.0.1): Unraid server monitoring and management over the native GraphQL API. https://github.com/tuthan/omarchy-unraid
+- **Lunar Calendar** (v1.1.0): East Asian lunar calendar, moon phase, Can Chi cycles and solar terms. https://github.com/tuthan/omarchy-lunar-calendar
+
+## Platform & DevOps work
+
+- **Multi-Region CI/CD Platform** (2022-2025, Discovermarket): Terraform and ArgoCD delivery platform over Kubernetes across AWS and Azure, producing SOC 2 and ISO 27001 evidence from the pipeline. Roughly halved deployment lead time.
+- **Kubernetes Platform Migration** (2015-2021, Zyllem): moved a logistics platform off hybrid-cloud VMs onto Kubernetes, with the CI/CD automation and operational tooling it required.
+- **Cloud FinOps Program** (2022-2025, Discovermarket): cloud cost ownership across AWS and Azure, with budget guardrails in the delivery pipelines.
+
+## Experience
+
+- **Independent AI & DevSecOps Engineer, atas.tech (May 2025 – Present)**: OmaSafe, BlindPass, Dependency Guard, Omarchy plugins, DevOps migration engagements.
+- **Lead DevSecOps Engineer, Discovermarket (Nov 2022 – Apr 2025)**: Multi-region CI/CD on Kubernetes across AWS and Azure, FinOps, SOC 2 and ISO 27001.
+- **Security Manager, HexTrust (Dec 2021 – Jun 2022)**: Wazuh SIEM, SOC 2, cloud security audits.
+- **SecOps Engineer, UnifiedPost Group (Mar 2021 – Dec 2021)**: Established SecOps, threat detection with Wazuh and Suricata.
+- **System / DevOps Engineer, Zyllem (Nov 2015 – Feb 2021)**: Hybrid cloud, CI/CD automation, Kubernetes migration.
+- **System Administrator, The Promotions Factory (Nov 2012 – Nov 2015)**: Global IT operations, AWS migration.
+- **IT Technician, Digital Work Network (Mar 2012 – Nov 2012)**: Network deployment and support.
 
 ## Technical Skills
 
-- **Agentic AI**: Agentic Development, Model Context Protocols (MCP), LLM Security.
-- **Cloud Infrastructure**: Kubernetes, Terraform, AWS, Azure.
-- **Cyber Security**: SOC 2, ISO 27001, SIEM (Wazuh), Threat Detection.
-- **DevOps**: CI/CD (GitHub Actions, ArgoCD), GitOps, FinOps.
+- **Agentic AI**: Agent Skills (Claude Code, Codex, OpenClaw), Model Context Protocol, tool-call gateways, prompt-injection hardening, supply-chain guardrails.
+- **Security & Compliance**: SOC 2, ISO 27001, Zero-Trust, Wazuh, Suricata, threat detection, cloud security audits, HPKE, AES-GCM.
+- **Cloud & Platform**: Kubernetes, Terraform, ArgoCD, GitOps, AWS, Azure, GitHub Actions, FinOps.
+- **Languages**: TypeScript, Rust, Python, QML/Quickshell, Bash.
