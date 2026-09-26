@@ -6,6 +6,7 @@ import { Nav } from './components/Nav'
 import { Projects } from './components/Projects'
 import { Reveal } from './components/Reveal'
 import { SectionHeading } from './components/SectionHeading'
+import { Showreel } from './components/Showreel'
 import { Skills } from './components/Skills'
 import { Spotlight } from './components/Spotlight'
 import { useTheme } from './hooks/useTheme'
@@ -19,6 +20,7 @@ function App() {
       <Nav theme={theme} onToggleTheme={toggle} />
       <main>
         <Hero />
+        <Showreel />
         <Spotlight />
         <Projects />
 

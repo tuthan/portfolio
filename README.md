@@ -9,6 +9,7 @@ Personal portfolio for [Hung Vo](https://www.linkedin.com/in/hungvotrung/): AI S
 ## What's on the page
 
 - **Hero and stats** — role, positioning, and four at-a-glance numbers for recruiters.
+- **Showreel** — a 15-second motion reel (`public/showreel/`). Muted autoplay only while in view, pause and sound toggles, no autoplay under `prefers-reduced-motion`. Rendered from code; source lives outside this repo.
 - **Featured: OmaSafe** — the 2026 flagship: a Rust CLI, an Omarchy bar plugin, and a multi-host agent skill for evidence-first plugin review, with an architecture flow and the design principles behind it.
 - **Projects grid** — filterable by Agentic AI, Security, Omarchy and DevOps. Covers BlindPass, Dependency Guard, the OmaSafe agent skill, Dropdown Terminal, Unraid Monitor, Lunar Calendar, BlindDrop, and past platform and SIEM work. Plugins listed on the Omarchy marketplace show live engagement: views, install-command copies and hearts.
 - **Interactive terminal** — `help`, `whoami`, `projects`, `skills`, `experience`, `contact`, `open <project-id>`, with Tab completion and command history.
